@@ -19,3 +19,9 @@ CREATE TABLE owners (
     full_name varchar(150),
     age INT
 );
+
+-- Create species table
+CREATE TABLE species (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name varchar(150)
+);
