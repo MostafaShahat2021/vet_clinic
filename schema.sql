@@ -12,3 +12,10 @@ CREATE TABLE animals (
 -- Add a column 'species' of type 'string'
 ALTER TABLE animals
 ADD COLUMN species varchar(80);
+
+-- Create owners table
+CREATE TABLE owners (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    full_name varchar(150),
+    age INT
+);
